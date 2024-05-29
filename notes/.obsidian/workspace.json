@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "82bf5bdb84fc8b03",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba11ab894b375736",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c45004ddb51ea9f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "85b19b7d0221e537",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ab03ee29b9c5147",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f399f91050a32dbb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c0f8791514cafc63",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "pro",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ba2fbb573e5ccd57",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "99f186ea1161f60b",
+    "type": "split",
+    "children": [
+      {
+        "id": "260b78927c3b3a0b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8af8b291578e2831",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d41dcf7959ee0b89",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "dbb373d3930d7d2b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "fb5ab045e332088e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 452.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "graph:Граф": false
+    }
+  },
+  "active": "8c45004ddb51ea9f",
+  "lastOpenFiles": [
+    "Example of vite proxy.md",
+    "proxy.md",
+    "Example of nginx proxy.md",
+    "Docker compose example.md",
+    "docker.md",
+    "Example of asp.net docker file.md",
+    "asp.net.md",
+    "Float in html.md",
+    "Relations EF asp.net.md",
+    "Enable CORS asp.net.md",
+    "s3.md",
+    "MinIO public share.md",
+    "minio.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Untitled 2.canvas",
+    "vue.md",
+    "vite.md",
+    "html.md",
+    "frontend.md",
+    "dev.md",
+    "files/Pasted image 20240526150517.png",
+    "files",
+    "Welcome.md"
+  ]
+}
