@@ -6,7 +6,7 @@ networks:
 
 services:
   example_1:
-	container_name: example_2
+    container_name: example_2
     image: image-name
     restart: always
     ports:
