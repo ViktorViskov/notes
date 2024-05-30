@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bc7c053ae8091ac3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Selenium python usage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Github actions example.md",
+                "file": "Selenium python usage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Github actions example.md",
+                "file": "Selenium python usage.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Github actions example.md"
+                "file": "Selenium python usage.md"
               }
             }
           }
@@ -170,15 +182,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8e5a408ddd7ed95",
+  "active": "bc7c053ae8091ac3",
   "lastOpenFiles": [
+    "Github actions example.md",
+    "Selenium python usage.md",
     "2024-05-30.md",
     "Example of nginx proxy.md",
     "nginx.md",
     "Docker compose templates.md",
     "proxy.md",
     "Systemd service.md",
-    "Github actions example.md",
     "Bash aliases for python.md",
     "python.md",
     "Docker file for python.md",
@@ -197,7 +210,6 @@
     "EF usage.md",
     "Example of vite proxy.md",
     "Example of asp.net docker file.md",
-    "asp.net.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
