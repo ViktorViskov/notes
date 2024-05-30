@@ -42,21 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f0a66b271622b2d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Systemd service.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Systemd service.md",
+                "file": "Github actions example.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Systemd service.md",
+                "file": "Github actions example.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -162,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Systemd service.md"
+                "file": "Github actions example.md"
               }
             }
           }
@@ -182,10 +170,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0a66b271622b2d2",
+  "active": "c8e5a408ddd7ed95",
   "lastOpenFiles": [
-    "Github actions example.md",
+    "2024-05-30.md",
+    "Example of nginx proxy.md",
+    "nginx.md",
+    "Docker compose templates.md",
+    "proxy.md",
     "Systemd service.md",
+    "Github actions example.md",
     "Bash aliases for python.md",
     "python.md",
     "Docker file for python.md",
@@ -200,16 +193,11 @@
     "orm.md",
     "Docker compose example.md",
     "docker.md",
-    "Docker compose templates.md",
     "Telegram notifier python.md",
     "EF usage.md",
     "Example of vite proxy.md",
-    "proxy.md",
-    "Example of nginx proxy.md",
     "Example of asp.net docker file.md",
     "asp.net.md",
-    "Float in html.md",
-    "Relations EF asp.net.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",

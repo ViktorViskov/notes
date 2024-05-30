@@ -16,4 +16,21 @@ server {
 }
 ```
 
+#### File name
+```bash
+site.conf.template
+```
+
+#### Docker compose file
+```yaml
+services:
+  nginx:
+    image: nginx
+    ports: 
+      - "80:80"
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+```
 [[proxy]]
+[[nginx]]
+[[docker]]
