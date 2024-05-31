@@ -18,41 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3fb1e21f5652abe2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bash aliases for python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c8e5a408ddd7ed95",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "28787593d5b73d0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "File name based on current date bash.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -81,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nginx",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -98,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -118,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "File name based on current date bash.md",
+                "file": "python.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "File name based on current date bash.md",
+                "file": "python.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -158,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "File name based on current date bash.md"
+                "file": "python.md"
               }
             }
           }
@@ -178,19 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "28787593d5b73d0c",
+  "active": "4b537152da4d857c",
   "lastOpenFiles": [
+    "Bash aliases for python.md",
+    "Example of nginx proxy.md",
+    "nginx.md",
     "File name based on current date bash.md",
     "2024-05-30.md",
     "Github actions example.md",
     "asp.net.md",
     "Selenium python usage.md",
-    "Example of nginx proxy.md",
-    "nginx.md",
     "Docker compose templates.md",
     "proxy.md",
     "Systemd service.md",
-    "Bash aliases for python.md",
     "python.md",
     "Docker file for python.md",
     "Sqlalchemy example.md",
