@@ -43,7 +43,7 @@ class CommentDb(base):
     text = Column("title", String(512))
     owner_id = Column("owner_id", Integer, ForeignKey("users.id"))
     owner = relationship("UserDb", back_populates="comments")
-    post_id = Column("post_id", Integer, ForeignKey("posts.id"))
+    post_id = Column("post_id", Integer, ForeignKey("posts.id"), ondelete='SET NULL')
     post = relationship("PostDb", back_populates="comments")
     created_at = Column("created_at", DateTime(), default=current_timestamp())
 ```
@@ -79,6 +79,7 @@ def get_db() -> Generator[Session, Any, None]:
     with session_maker() as session:
         yield session
 
+#Dont work postgres
 def auto_create_db():
     try:
         con = engine.connect()
@@ -136,6 +137,15 @@ def delete(id: int) -> None:
 def get(limit:int = 1000, offset: int = 0) -> list[User]:
     with session_maker() as session:
         return session.query(User).limit(limit).offset(offset).all()
+```
+
+#### Packages
+```bash
+sqlalchemy
+alembic
+psycopg2-binary #postgres
+pymysql #mysql/mariadb
+
 ```
 
 [[orm]]
