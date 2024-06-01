@@ -8,8 +8,11 @@ from sqlalchemy import ForeignKey
 from sqlalchemy import Text
 from sqlalchemy.orm import Session
 from sqlalchemy.orm import relationship
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.sql.functions import current_timestamp
 
+
+base = declarative_base()
 
 class UserDb(base):
     __tablename__ = 'users'
@@ -55,7 +58,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 from sqlalchemy.orm import sessionmaker
 
-from models.db import Base
+from db.schemes import Base
 
 # string example
 # sqlite:///./todo.db
@@ -138,3 +141,4 @@ def get(limit:int = 1000, offset: int = 0) -> list[User]:
 [[orm]]
 [[python]]
 [[sqlalchemy]]
+[[Alembic usage]]

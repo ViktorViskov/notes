@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Example of nginx proxy.md",
+                "file": "Alembic usage.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nginx",
+                "query": "sqla",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Example of nginx proxy.md",
+                "file": "Alembic usage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Example of nginx proxy.md",
+                "file": "Alembic usage.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Example of nginx proxy.md"
+                "file": "Alembic usage.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "280dd49ec31da4b0",
   "lastOpenFiles": [
-    "nginx.md",
+    "Sqlalchemy example.md",
+    "sqlalchemy.md",
     "Example of nginx proxy.md",
+    "nginx.md",
     "python.md",
     "Bash aliases for python.md",
     "File name based on current date bash.md",
@@ -161,13 +163,11 @@
     "proxy.md",
     "Systemd service.md",
     "Docker file for python.md",
-    "Sqlalchemy example.md",
     "Schedule example python.md",
     "Background schedule example python.md",
     "JWT example python.md",
     "Crypter decripter python.md",
     "schedule.md",
-    "sqlalchemy.md",
     "Alembic usage.md",
     "orm.md",
     "Docker compose example.md",
