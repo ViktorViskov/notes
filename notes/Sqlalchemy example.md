@@ -58,7 +58,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 from sqlalchemy.orm import sessionmaker
 
-from db.schemes import Base
+from db.schemes import base
 
 # string example
 # sqlite:///./todo.db
@@ -72,7 +72,7 @@ engine = create_engine(CONNECTION_STRING, echo=False, pool_pre_ping=True, pool_r
 session_maker = sessionmaker(bind=engine, expire_on_commit=False)
 
 def create_db() -> None:
-    Base.metadata.create_all(engine)
+    base.metadata.create_all(engine)
 
 
 def get_db() -> Generator[Session, Any, None]:
