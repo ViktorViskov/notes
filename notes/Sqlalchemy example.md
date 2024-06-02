@@ -79,7 +79,7 @@ def get_db() -> Generator[Session, Any, None]:
     with session_maker() as session:
         yield session
 
-#Dont work postgres
+#Dont work with postgres
 def auto_create_db():
     try:
         con = engine.connect()
