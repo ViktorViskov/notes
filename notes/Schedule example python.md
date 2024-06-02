@@ -1,5 +1,5 @@
 ```python
-import time
+from time import sleep
 
 import schedule
 
@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     while True:
         schedule.run_pending()
-        time.sleep(1)
+        sleep(1)
 ```
 [[python]]
 [[schedule]]
