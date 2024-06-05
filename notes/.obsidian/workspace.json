@@ -11,12 +11,8 @@
             "id": "6a2c2ba799c8c5cb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TF course todo.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TF course todo.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TF course todo.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "TF course todo.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -145,7 +137,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a2c2ba799c8c5cb",
+  "active": "f399f91050a32dbb",
   "lastOpenFiles": [
     "TF course todo.md",
     "files/Pasted image 20240602221316.png",
