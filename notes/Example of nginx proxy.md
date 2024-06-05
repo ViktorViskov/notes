@@ -9,6 +9,7 @@ server {
         alias /static/;
         expires 30d;
         access_log off;
+        try_files $uri $uri/ /; #redirect all requests to index.html
     }
 
     location /media/ {
