@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tensor flow",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Regression model example Tensor Flow.md",
+                "file": "MariaDB.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Regression model example Tensor Flow.md",
+                "file": "MariaDB.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Regression model example Tensor Flow.md"
+                "file": "MariaDB.md"
               }
             }
           }
@@ -183,10 +183,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c0f8791514cafc63",
+  "active": "64bfe8f191104611",
   "lastOpenFiles": [
-    "Pyinstaller.md",
     "Regression model example Tensor Flow.md",
+    "Pyinstaller.md",
     "Example of nginx proxy.md",
     "DB backup docker service example.md",
     "PostgreSQL.md",
