@@ -78,15 +78,15 @@ model.compile(
 history = model.fit(x_train_normal, y_train, epochs=100, verbose=1)
 pd.DataFrame(history.history).plot()
 
-predicted = model.predict(x_test_normal)
-print(model.evaluate(x_test_normal, y_test))
+predicted = model.predict(x_test).squeeze()
+loss, mae = model.evaluate(x_test, y_test, verbose=0)
+test_mean = y_test.mean()
+percent = round((mae / test_mean) * 100, 3)
 
-mean = y_test.mean()
-std = y_test.std()
-cof_var = std / mean
-print(f"Mean: {mean}, Std: {std}, Coefficient of Variation: {cof_var}")
+print(f"Test data: MEAN: {test_mean}, MAE: {mae}, {percent} %")
 
-pd.DataFrame(predicted.squeeze() - y_test).plot(kind='bar')
+pd.DataFrame(predicted.squeeze() - y_test).plot(kind='bar', figsize=(10, 6))
+#pd.DataFrame(np.round(((y_test - predicted) / y_test.mean()) * 100, 1)).plot(kind='hist', figsize=(15, 6), bins=100)
 ```
 
 ##### Saving
