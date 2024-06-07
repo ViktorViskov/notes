@@ -38,7 +38,7 @@
               "type": "markdown",
               "state": {
                 "file": "Regression model example Tensor Flow.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MariaDB.md",
+                "file": "Regression model example Tensor Flow.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MariaDB.md",
+                "file": "Regression model example Tensor Flow.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MariaDB.md"
+                "file": "Regression model example Tensor Flow.md"
               }
             }
           }
@@ -183,14 +183,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "64bfe8f191104611",
+  "active": "83e830789055cf11",
   "lastOpenFiles": [
+    "MariaDB.md",
     "Regression model example Tensor Flow.md",
+    "Untitled.md",
     "Pyinstaller.md",
     "Example of nginx proxy.md",
     "DB backup docker service example.md",
     "PostgreSQL.md",
-    "MariaDB.md",
     "MySQL.md",
     "TF course todo.md",
     "files/Pasted image 20240602221316.png",
@@ -220,7 +221,6 @@
     "proxy.md",
     "Systemd service.md",
     "Docker file for python.md",
-    "Background schedule example python.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",

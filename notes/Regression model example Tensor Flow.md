@@ -1,3 +1,7 @@
+### Python file format
+```shell
+.ipynb
+```
 ### requirements.txt
 ```
 tensorflow-cpu
