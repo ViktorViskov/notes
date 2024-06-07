@@ -75,6 +75,12 @@ pd.DataFrame(history.history).plot()
 
 predicted = model.predict(x_test_normal)
 print(model.evaluate(x_test_normal, y_test))
+
+mean = y_test.mean()
+std = y_test.std()
+cof_var = std / mean
+print(f"Mean: {mean}, Std: {std}, Coefficient of Variation: {cof_var}")
+
 pd.DataFrame(predicted.squeeze() - y_test).plot(kind='bar')
 ```
 
