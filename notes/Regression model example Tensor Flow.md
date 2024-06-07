@@ -70,7 +70,7 @@ model.compile(
 
 ##### Model fitting and evaluating
 ```python
-history = model.fit(x_train_normal, y_train, epochs=400, verbose=1)
+history = model.fit(x_train_normal, y_train, epochs=100, verbose=1)
 pd.DataFrame(history.history).plot()
 
 predicted = model.predict(x_test_normal)
