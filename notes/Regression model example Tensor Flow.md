@@ -61,7 +61,7 @@ model_three = keras.Sequential([
   keras.layers.Dense(1)
 ])
 
-model_three.compile(
+model.compile(
   loss=['mae'],
   optimizer=keras.optimizers.Adam(learning_rate=0.003),
   metrics=['mae']
@@ -70,11 +70,11 @@ model_three.compile(
 
 ##### Model fitting and evaluating
 ```python
-history = model_three.fit(x_train_normal, y_train, epochs=400, verbose=1)
+history = model.fit(x_train_normal, y_train, epochs=400, verbose=1)
 pd.DataFrame(history.history).plot()
 
-predicted = model_three.predict(x_test_normal)
-print(model_three.evaluate(x_test_normal, y_test))
+predicted = model.predict(x_test_normal)
+print(model.evaluate(x_test_normal, y_test))
 pd.DataFrame(predicted.squeeze() - y_test).plot(kind='bar')
 ```
 
