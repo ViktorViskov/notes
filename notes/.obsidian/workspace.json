@@ -18,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2d3e6c9c4fd8525e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pyinstaller.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "83e830789055cf11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Regression model example Tensor Flow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "64bfe8f191104611",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MariaDB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ngin",
+                "query": "tensor flow",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Example of nginx proxy.md",
+                "file": "Regression model example Tensor Flow.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Example of nginx proxy.md",
+                "file": "Regression model example Tensor Flow.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Example of nginx proxy.md"
+                "file": "Regression model example Tensor Flow.md"
               }
             }
           }
@@ -146,8 +183,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "98f1f423e5e1a4a8",
+  "active": "c0f8791514cafc63",
   "lastOpenFiles": [
+    "Pyinstaller.md",
+    "Regression model example Tensor Flow.md",
+    "Example of nginx proxy.md",
+    "DB backup docker service example.md",
+    "PostgreSQL.md",
+    "MariaDB.md",
+    "MySQL.md",
     "TF course todo.md",
     "files/Pasted image 20240602221316.png",
     "files/Car parser docs.md",
@@ -164,7 +208,6 @@
     "Sqlalchemy example.md",
     "Alembic usage.md",
     "sqlalchemy.md",
-    "Example of nginx proxy.md",
     "nginx.md",
     "python.md",
     "Bash aliases for python.md",
@@ -178,12 +221,6 @@
     "Systemd service.md",
     "Docker file for python.md",
     "Background schedule example python.md",
-    "JWT example python.md",
-    "Crypter decripter python.md",
-    "schedule.md",
-    "orm.md",
-    "Docker compose example.md",
-    "docker.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
