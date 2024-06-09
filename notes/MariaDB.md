@@ -30,5 +30,18 @@ mariadb-dump -h $HOST -P $PORT -u $USER -p$PASSWORD $DATABASE > backup.sql
 mariadb -h $HOST -P $PORT -u $USER -p$PASSWORD $DATABASE < backup.sql
 ```
 
+#### Docker compose example
+```
+services:
+
+  db:
+    image: mariadb:10.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+    ports: 
+      - "3306:3306"
+```
+
 [[MariaDB]]
 [[MySQL]]

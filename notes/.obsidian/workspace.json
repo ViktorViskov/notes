@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "7e9e0a531bac5a1f",
+        "id": "09b018536186f683",
         "type": "tabs",
         "children": [
           {
-            "id": "23ad01fcba94b62e",
+            "id": "4a36aadf09d31837",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.6.2"
+                "file": "nginx.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -46,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nginx",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -84,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "nginx.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "nginx.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -121,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "nginx.md"
+              }
             }
           }
         ]
@@ -140,15 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "23ad01fcba94b62e",
+  "active": "4a36aadf09d31837",
   "lastOpenFiles": [
-    "Example of nginx proxy.md",
-    "Pyinstaller.md",
-    "Regression model example Tensor Flow.md",
+    "orm.md",
+    "nginx.md",
+    "nginx.md",
+    "Docker compose templates.md",
     "MariaDB.md",
-    "Untitled.md",
     "DB backup docker service example.md",
     "PostgreSQL.md",
+    "Sqlalchemy example.md",
+    "Pyinstaller.md",
+    "Regression model example Tensor Flow.md",
+    "Untitled.md",
     "MySQL.md",
     "TF course todo.md",
     "files/Pasted image 20240602221316.png",
@@ -163,10 +173,8 @@
     "files/Pasted image 20240602222022.png",
     "files/Pasted image 20240602221918.png",
     "Schedule example python.md",
-    "Sqlalchemy example.md",
     "Alembic usage.md",
     "sqlalchemy.md",
-    "nginx.md",
     "python.md",
     "Bash aliases for python.md",
     "File name based on current date bash.md",
@@ -174,10 +182,8 @@
     "Github actions example.md",
     "asp.net.md",
     "Selenium python usage.md",
-    "Docker compose templates.md",
     "proxy.md",
     "Systemd service.md",
-    "Docker file for python.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
