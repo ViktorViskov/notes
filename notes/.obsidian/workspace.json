@@ -4,59 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "e7479c491123a15e",
+        "id": "7e9e0a531bac5a1f",
         "type": "tabs",
         "children": [
           {
-            "id": "98f1f423e5e1a4a8",
+            "id": "23ad01fcba94b62e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Example of nginx proxy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2d3e6c9c4fd8525e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Pyinstaller.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83e830789055cf11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Regression model example Tensor Flow.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "64bfe8f191104611",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MariaDB.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.6.2"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Regression model example Tensor Flow.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Regression model example Tensor Flow.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -162,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Regression model example Tensor Flow.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -183,13 +140,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83e830789055cf11",
+  "active": "23ad01fcba94b62e",
   "lastOpenFiles": [
-    "MariaDB.md",
-    "Regression model example Tensor Flow.md",
-    "Untitled.md",
-    "Pyinstaller.md",
     "Example of nginx proxy.md",
+    "Pyinstaller.md",
+    "Regression model example Tensor Flow.md",
+    "MariaDB.md",
+    "Untitled.md",
     "DB backup docker service example.md",
     "PostgreSQL.md",
     "MySQL.md",
