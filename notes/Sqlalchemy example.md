@@ -151,4 +151,4 @@ pymysql #mysql/mariadb
 [[orm]]
 [[python]]
 [[sqlalchemy]]
-[[Alembic usage]]
+[[Alembic]]
