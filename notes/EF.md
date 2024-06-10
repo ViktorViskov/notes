@@ -1,4 +1,4 @@
-## Linux usage
+## Linux / cli usage
 #### Create migration
 ```bash
 dotnet ef migrations add InitialCreate
