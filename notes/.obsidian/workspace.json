@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "592b4af2fbd54208",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a36aadf09d31837",
+  "active": "592b4af2fbd54208",
   "lastOpenFiles": [
     "Relations EF asp.net.md",
     "orm.md",
