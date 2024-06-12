@@ -28,7 +28,7 @@ Need to use specific activation to ==**non linear**== data for hidden tensors (c
 
 Output tensor must use ==**sigmoid**== for binary classification
 ```python
-model_6 = keras.Sequential([
+model_1 = keras.Sequential([
     keras.layers.Dense(16, activation="relu"),
     keras.layers.Dense(4, activation="relu"),
     keras.layers.Dense(1, activation="sigmoid")
@@ -38,7 +38,7 @@ model_6 = keras.Sequential([
 For loss method ==**BinaryCrossentropy**==
 For metrics ==**accuracy**==
 ```python
-model_6.compile(
+model_1.compile(
     loss=keras.losses.BinaryCrossentropy(),
     optimizer=keras.optimizers.Adam(learning_rate=0.01),
     metrics=["accuracy"]
@@ -46,7 +46,11 @@ model_6.compile(
 ```
 ### Training
 ```python
-model_6.fit(x_train, y_train, epochs=25, verbose=1)
+history = model_1.fit(x_train, y_train, epochs=25, verbose=1)
+```
+### Show training
+```python
+pd.DataFrame(history.history).plot(title="Model 6 loss and accuracy", xlabel="epochs", ylabel="loss/accuracy", figsize=(10, 7))
 ```
 
 [[Tensor Flow]]
