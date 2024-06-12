@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "61a4b8a953b61574",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Define best learning rate tensor flow.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Define best learning rate tensor flow.md",
+                "file": "Binary classification tensor flow.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Define best learning rate tensor flow.md",
+                "file": "Binary classification tensor flow.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Define best learning rate tensor flow.md"
+                "file": "Binary classification tensor flow.md"
               }
             }
           }
@@ -158,13 +145,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "61a4b8a953b61574",
+  "active": "992002f4f910edeb",
   "lastOpenFiles": [
-    "files/Pasted image 20240612194730.png",
-    "files/Pasted image 20240612194058.png",
+    "Regression model example Tensor Flow.md",
+    "Tensor Flow.md",
     "Binary classification tensor flow.md",
     "Define best learning rate tensor flow.md",
-    "Regression model example Tensor Flow.md",
+    "files/Pasted image 20240612194730.png",
+    "files/Pasted image 20240612194058.png",
     "MariaDB.md",
     "MySQL.md",
     "DB backup docker service example.md",
@@ -192,7 +180,6 @@
     "files/Pasted image 20240602223314.png",
     "files/Pasted image 20240602222537.png",
     "files/Pasted image 20240602222233.png",
-    "files/Pasted image 20240602222022.png",
     "Schedule example python.md",
     "sqlalchemy.md",
     "python.md",

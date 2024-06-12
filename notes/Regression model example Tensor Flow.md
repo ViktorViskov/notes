@@ -21,6 +21,7 @@ from sklearn.compose import make_column_transformer
 from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import median_absolute_error
+import matplotlib.pyplot as plt
 ```
 
 ##### Data loading
