@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "09b018536186f683",
+        "id": "61769268cfaf952e",
         "type": "tabs",
         "children": [
           {
-            "id": "4a36aadf09d31837",
+            "id": "4f79a63df602737f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EF.md",
+                "file": "MariaDB.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "592b4af2fbd54208",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "EF.md",
+                "file": "MariaDB.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "EF.md",
+                "file": "MariaDB.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -137,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EF.md"
+                "file": "MariaDB.md"
               }
             }
           }
@@ -157,25 +146,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "592b4af2fbd54208",
+  "active": "4f79a63df602737f",
   "lastOpenFiles": [
+    "MySQL.md",
+    "DB backup docker service example.md",
+    "PostgreSQL.md",
+    "schedule.md",
+    "Background schedule example python.md",
+    "EF.md",
     "Relations EF asp.net.md",
     "orm.md",
-    "EF.md",
     "Alembic.md",
     "Sqlalchemy example.md",
     "Regression model example Tensor Flow.md",
     "Docker compose example.md",
     "Docker file for python.md",
-    "Background schedule example python.md",
     "nginx.md",
     "Docker compose templates.md",
     "MariaDB.md",
-    "DB backup docker service example.md",
-    "PostgreSQL.md",
     "Pyinstaller.md",
     "Untitled.md",
-    "MySQL.md",
     "TF course todo.md",
     "files/Pasted image 20240602221316.png",
     "files/Car parser docs.md",
@@ -194,7 +184,6 @@
     "Bash aliases for python.md",
     "File name based on current date bash.md",
     "2024-05-30.md",
-    "Github actions example.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
