@@ -13,13 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Binary classification tensor flow.md",
+                "file": "Find best learning rate tensor flow.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63cc08819e8ed06f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Multi-class classification.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "97b78b26ed35407c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tensor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,7 +86,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +107,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Binary classification tensor flow.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +123,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Binary classification tensor flow.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -124,9 +144,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Binary classification tensor flow.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -145,12 +163,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "992002f4f910edeb",
+  "active": "97b78b26ed35407c",
   "lastOpenFiles": [
-    "Regression model example Tensor Flow.md",
+    "ML.md",
     "Tensor Flow.md",
+    "python.md",
+    "Confusion matrix.md",
+    "files/Pasted image 20240613230430.png",
+    "Multi-class classification.md",
+    "Find best learning rate tensor flow.md",
     "Binary classification tensor flow.md",
-    "Define best learning rate tensor flow.md",
+    "Regression model example Tensor Flow.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
     "MariaDB.md",
@@ -172,17 +195,12 @@
     "Untitled.md",
     "TF course todo.md",
     "files/Pasted image 20240602221316.png",
-    "files/Car parser docs.md",
     "files/Pasted image 20240602221013.png",
     "files/Pasted image 20240602220924.png",
     "files/Pasted image 20240602223451.png",
     "files/Pasted image 20240602223431.png",
     "files/Pasted image 20240602223314.png",
     "files/Pasted image 20240602222537.png",
-    "files/Pasted image 20240602222233.png",
-    "Schedule example python.md",
-    "sqlalchemy.md",
-    "python.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
