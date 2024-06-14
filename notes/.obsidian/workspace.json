@@ -4,43 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a5a935632256c5fd",
+        "id": "a0454eda6e6f0a7f",
         "type": "tabs",
         "children": [
           {
-            "id": "992002f4f910edeb",
+            "id": "52289ac93e735880",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "63cc08819e8ed06f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Multi-class classification.md",
+                "file": "Docker compose example.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "97b78b26ed35407c",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tensor",
+                "query": "docker",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -107,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
+                "file": "Docker compose example.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
+                "file": "Docker compose example.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -147,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Find best learning rate tensor flow.md"
+                "file": "Docker compose example.md"
               }
             }
           }
@@ -167,15 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97b78b26ed35407c",
+  "active": "52289ac93e735880",
   "lastOpenFiles": [
+    "Find best learning rate tensor flow.md",
+    "Multi-class classification.md",
     "ML.md",
     "Tensor Flow.md",
     "python.md",
     "Confusion matrix.md",
     "files/Pasted image 20240613230430.png",
-    "Multi-class classification.md",
-    "Find best learning rate tensor flow.md",
     "Binary classification tensor flow.md",
     "Regression model example Tensor Flow.md",
     "files/Pasted image 20240612194730.png",
