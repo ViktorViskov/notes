@@ -1,7 +1,7 @@
 ### Docker compose example
 ```yaml
 services:
-  db-backup:
+  db-aslbackup:
     build: .
     restart: unless-stopped
     volumes:
