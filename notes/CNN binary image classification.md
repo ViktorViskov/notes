@@ -53,7 +53,6 @@ test_data = keras.utils.image_dataset_from_directory(
 normalization_layer = keras.layers.Rescaling(1./255)
 
 train_data_simp_aug = train_data.map(lambda x, y: (normalization_layer(x), y))
-test_data_simp_aug = test_data.map(lambda x, y: (normalization_layer(x), y))
 ```
 
 #### Complex dataset augmentation
@@ -91,7 +90,7 @@ model_1.compile(
     metrics=["accuracy"]
 )
 
-history_1 = model_4.fit(
+history_1 = model_1.fit(
     train_data_augmented,
     epochs=5,
     validation_data=test_data,
