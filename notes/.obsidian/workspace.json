@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "aa5d1e07e8533107",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CNN binary image classification.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "best",
+                "query": "cnn",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
+                "file": "CNN binary image classification.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
+                "file": "CNN binary image classification.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Find best learning rate tensor flow.md"
+                "file": "CNN binary image classification.md"
               }
             }
           }
@@ -146,13 +158,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52289ac93e735880",
+  "active": "aa5d1e07e8533107",
   "lastOpenFiles": [
+    "Find best learning rate tensor flow.md",
+    "CNN binary image classification.md",
     "Binary classification tensor flow.md",
     "PostgreSQL.md",
     "Alembic.md",
     "Docker compose example.md",
-    "Find best learning rate tensor flow.md",
     "Multi-class classification.md",
     "ML.md",
     "Tensor Flow.md",
@@ -176,7 +189,6 @@
     "Docker compose templates.md",
     "Pyinstaller.md",
     "Untitled.md",
-    "TF course todo.md",
     "files/Pasted image 20240602221316.png",
     "files/Pasted image 20240602221013.png",
     "files/Pasted image 20240602220924.png",
