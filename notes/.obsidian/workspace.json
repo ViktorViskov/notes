@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker compose example.md",
-                "mode": "source",
+                "file": "Find best learning rate tensor flow.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "docker",
+                "query": "best",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker compose example.md",
+                "file": "Find best learning rate tensor flow.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker compose example.md",
+                "file": "Find best learning rate tensor flow.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker compose example.md"
+                "file": "Find best learning rate tensor flow.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "52289ac93e735880",
   "lastOpenFiles": [
+    "Binary classification tensor flow.md",
+    "PostgreSQL.md",
+    "Alembic.md",
+    "Docker compose example.md",
     "Find best learning rate tensor flow.md",
     "Multi-class classification.md",
     "ML.md",
@@ -155,22 +159,18 @@
     "python.md",
     "Confusion matrix.md",
     "files/Pasted image 20240613230430.png",
-    "Binary classification tensor flow.md",
     "Regression model example Tensor Flow.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
     "MariaDB.md",
     "MySQL.md",
     "DB backup docker service example.md",
-    "PostgreSQL.md",
     "schedule.md",
     "Background schedule example python.md",
     "EF.md",
     "Relations EF asp.net.md",
     "orm.md",
-    "Alembic.md",
     "Sqlalchemy example.md",
-    "Docker compose example.md",
     "Docker file for python.md",
     "nginx.md",
     "Docker compose templates.md",
