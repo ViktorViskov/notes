@@ -97,3 +97,15 @@ history_1 = model_4.fit(
     validation_data=test_data,
 )
 ```
+#### Make prediction
+```python
+image = keras.utils.load_img("800px-Pizza_Margherita_stu_spivack.jpg", target_size=(224, 224))
+image_array = keras.utils.img_to_array(image)
+image_array = image_array / 255
+image_array = tf.expand_dims(image_array, axis=0)
+prediction = model_4.predict(image_array)
+prediction, class_names[int(prediction > 0.5)]
+```
+
+[[Tensor Flow]]
+[[ML]]
