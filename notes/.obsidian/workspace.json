@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2dec8d37503b0401",
+        "id": "467006d8c138dd64",
         "type": "tabs",
         "children": [
           {
-            "id": "8eab20aa8aa7c08d",
+            "id": "cea7791644dae611",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB backup docker service example.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "back",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB backup docker service example.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB backup docker service example.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DB backup docker service example.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,27 +138,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8eab20aa8aa7c08d",
+  "active": "cea7791644dae611",
   "lastOpenFiles": [
+    "Tensor Flow.md",
+    "cryptography.md",
+    "PostgreSQL.md",
+    "MariaDB.md",
+    "DB backup docker service example.md",
+    "Sqlalchemy example.md",
+    "sqlalchemy.md",
     "Background schedule example python.md",
     "Binary classification tensor flow.md",
     "VMware install guide.md",
     "Pyinstaller.md",
     "Regression model example Tensor Flow.md",
-    "Tensor Flow.md",
     "Define best learning rate tensor flow.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
-    "MariaDB.md",
     "MySQL.md",
-    "DB backup docker service example.md",
-    "PostgreSQL.md",
     "schedule.md",
     "EF.md",
     "Relations EF asp.net.md",
     "orm.md",
     "Alembic.md",
-    "Sqlalchemy example.md",
     "Docker compose example.md",
     "Docker file for python.md",
     "nginx.md",
@@ -182,8 +176,6 @@
     "files/Pasted image 20240602223314.png",
     "files/Pasted image 20240602222537.png",
     "files/Pasted image 20240602222233.png",
-    "Schedule example python.md",
-    "sqlalchemy.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
