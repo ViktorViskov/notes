@@ -1,0 +1,6 @@
+### Installing
+```powershell
+ipconfig
+```
+
+[[vmware]]
