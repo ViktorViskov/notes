@@ -68,7 +68,10 @@ test_data = keras.utils.image_dataset_from_directory(
 ```python
 normalization_layer = keras.layers.Rescaling(1./255)
 
-train_data_simp_aug = train_data.map(lambda x, y: (normalization_layer(x), y))
+train_data_norm = train_data.map(lambda x, y: (normalization_layer(x), y))
+
+x, y = next(iter(train_data_norm.take(1)))
+x, y
 ```
 
 #### Complex dataset augmentation
