@@ -24,6 +24,22 @@ class_names = np.array(sorted(os.listdir("pizza_steak/train/")))
 class_names
 ```
 
+#### Show images
+```python
+def show_random_image(target_dir: str, target_class: str):
+    images = os.listdir(f"{target_dir}/{target_class}")
+    random_image = np.random.choice(images)
+    img = plt.imread(f"{target_dir}/{target_class}/{random_image}")
+    plt.title(f"{target_class} {img.shape}")
+    plt.axis("off")
+    plt.imshow(img)
+
+plt.figure(figsize=(14,10))
+plt.subplot(1, 2, 1)
+show_random_image(train_data_dir, np.random.choice(class_names))
+plt.subplot(1, 2, 2)
+show_random_image(train_data_dir, np.random.choice(class_names))
+```
 #### Load dataset
 ```python
 tf.random.set_seed(42)

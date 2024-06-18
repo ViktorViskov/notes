@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -162,11 +163,11 @@
   "lastOpenFiles": [
     "Find best learning rate tensor flow.md",
     "CNN binary image classification.md",
+    "Multi-class classification.md",
     "Binary classification tensor flow.md",
     "PostgreSQL.md",
     "Alembic.md",
     "Docker compose example.md",
-    "Multi-class classification.md",
     "ML.md",
     "Tensor Flow.md",
     "python.md",
