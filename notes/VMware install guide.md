@@ -10,6 +10,40 @@ Need to create deploy keys in git provider
 [How to create deploy keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys)
 
 ### Step 1
+
+#### Create db
+First, you need to create a folder in the user directory
+```shell
+mkdir db
+```
+
+You need to create a docker-compose.yml file to start the database
+```shell
+nano docker-compose.yml
+```
+
+`docker-compose.yml`
+```yaml
+services:
+  db:
+    image: mysql
+    container_name: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: somepassword
+      MYSQL_DATABASE: vmware-booking
+```
+In the file, you need to replace `somepassword` with a more secure password
+
+After saving, you need to start the database
+```shell
+docker compose up -d
+```
+
+### Step 2
 #### Clone the Project from GitHub/GitLab Repository
 [link to project](https://gitlab.pcvdata.dk/team/vmware-docker-compose.git)
 
@@ -22,21 +56,20 @@ After that, need to change directory to project folder
 cd vmware-docker-compose
 ```
 
-### Step 2
+### Step 3
 #### Prepare the Clone Script
 Open the `clone_services.sh` file with a text editor and make the following changes:
-1. Update the `PROJECT_PATH` variable to the correct path of the project folder.
-2. Update every Git link to the correct Git link.
+```shell
+nano clone_services.sh
+```
+1. Check and update every Git link to the correct Git link.
 
 #### Order for links
 1. Main project Git link
 2. Automation Git link
 3. Backend Git link
 4. Frontend Git link
-### Step 3
-#### Create db
-...
-### Step 3
+### Step 4
 #### Prepare `.env` file
 Before editing the configuration file, you need to create it. The Git repository contains an example of a `.env` file named `.env.example`.
 ```shell
