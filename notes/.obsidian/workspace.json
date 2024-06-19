@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CNN binary image classification.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a2704781dfc72951",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CNN multi-class.md",
+                "file": "Confusion matrix.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pret",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -90,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CNN multi-class.md",
+                "file": "Confusion matrix.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CNN multi-class.md",
+                "file": "Confusion matrix.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -150,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CNN multi-class.md"
+                "file": "Confusion matrix.md"
               }
             }
           }
@@ -170,12 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a2704781dfc72951",
+  "active": "aa5d1e07e8533107",
   "lastOpenFiles": [
+    "Multi-class classification.md",
     "CNN binary image classification.md",
     "CNN multi-class.md",
     "Find best learning rate tensor flow.md",
-    "Multi-class classification.md",
     "Binary classification tensor flow.md",
     "PostgreSQL.md",
     "Alembic.md",
