@@ -33,7 +33,9 @@ Open the `clone_services.sh` file with a text editor and make the following chan
 2. Automation Git link
 3. Backend Git link
 4. Frontend Git link
-
+### Step 3
+#### Create db
+...
 ### Step 3
 #### Prepare `.env` file
 Before editing the configuration file, you need to create it. The Git repository contains an example of a `.env` file named `.env.example`.
