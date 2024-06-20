@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VMware install guide.md",
+                "file": "MariaDB.md",
                 "mode": "source",
                 "source": false
               }
@@ -57,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vm",
+                "query": "mar",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VMware install guide.md",
+                "file": "MariaDB.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VMware install guide.md",
+                "file": "MariaDB.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VMware install guide.md"
+                "file": "MariaDB.md"
               }
             }
           }
@@ -157,10 +157,10 @@
   },
   "active": "458f87f66a90bc00",
   "lastOpenFiles": [
+    "VMware install guide.md",
     "MariaDB.md",
     "Define best learning rate tensor flow.md",
     "Binary classification tensor flow.md",
-    "VMware install guide.md",
     "frontend.md",
     "vue.md",
     "Crypter decripter python.md",
