@@ -5,75 +5,37 @@
 ### Additional Documentation
 [How to install docker](https://docs.docker.com/engine/install/)
 
-### Step 0 (Optional)
-Need to create deploy keys in git provider
-[How to create deploy keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys)
-
+### Step 0 
+Copy unpack project files and change directory
+```shell
+tar -xf vmware-docker-compose.tgz
+cd vmware-docker-compose
+```
 ### Step 1
 
-#### Create db
-First, you need to create a folder in the user directory
+#### Configre and create db service
+First, you need to change to db directory
 ```shell
-mkdir db
+cd db
 ```
 
-You need to create a docker-compose.yml file to start the database
+You need to create `.env` file with password whitch one will be use to connect to db
 ```shell
-nano docker-compose.yml
+cp .env.example .env
+nano .env
 ```
 
-`docker-compose.yml`
-```yaml
-services:
-  db:
-    image: mysql
-    container_name: mysql
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
-    ports:
-      - 3306:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: somepassword
-      MYSQL_DATABASE: vmware-booking
-```
-In the file, you need to replace `somepassword` with a more secure password
-
-After saving, you need to start the database
+After saving, you need to start docker compose to build and start database
 ```shell
 docker compose up -d
 ```
 
-### Step 2
-#### Clone the Project from GitHub/GitLab Repository
-[link to project](https://gitlab.pcvdata.dk/team/vmware-docker-compose.git)
-
+You can successful back to project directory
 ```shell
-git clone https://gitlab.pcvdata.dk/team/vmware-docker-compose.git
-```
-
-After that, need to change directory to project folder
-```shell
-cd vmware-docker-compose
+cd ..
 ```
 
 ### Step 3
-#### Prepare the Clone Script
-Open the `clone_services.sh` file with a text editor and make the following changes:
-```shell
-nano clone_services.sh
-```
-1. Check and update every Git link to the correct Git link.
-
-#### Order for links
-1. Main project Git link
-2. Automation Git link
-3. Backend Git link
-4. Frontend Git link
-### Step 4
-1. Потрібно положити файли встановлення `vcenter` в папку `folder`
-2. Потрібно створити для кожного `vcenter` файл налаштувань та названи файл так як має бути в майбутньому ip адресса vcenter. Файли налаштувань знаходяться в папці `configs`
-
-### Step 5
 #### Prepare `.env` file
 Before editing the configuration file, you need to create it. The Git repository contains an example of a `.env` file named `.env.example`. Need to make copy of this file and edit
 ```shell

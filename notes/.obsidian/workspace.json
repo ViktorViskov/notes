@@ -4,31 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "467006d8c138dd64",
+        "id": "fd56762612eff2ca",
         "type": "tabs",
         "children": [
           {
-            "id": "cea7791644dae611",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "458f87f66a90bc00",
+            "id": "87d055e379f6940c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MariaDB.md",
+                "file": "VMware install guide.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -57,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mar",
+                "query": "vmw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -95,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MariaDB.md",
+                "file": "VMware install guide.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MariaDB.md",
+                "file": "VMware install guide.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -135,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MariaDB.md"
+                "file": "VMware install guide.md"
               }
             }
           }
@@ -155,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "458f87f66a90bc00",
+  "active": "87d055e379f6940c",
   "lastOpenFiles": [
+    "vmware.md",
+    "Docker compose example.md",
     "VMware install guide.md",
     "MariaDB.md",
     "Define best learning rate tensor flow.md",
@@ -170,9 +163,7 @@
     "Background schedule example python.md",
     "Tensor Flow.md",
     "Powershell install vcenter.md",
-    "vmware.md",
     "Regression model example Tensor Flow.md",
-    "Docker compose example.md",
     "nginx.md",
     "MySQL.md",
     "DB backup docker service example.md",
