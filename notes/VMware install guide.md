@@ -43,14 +43,18 @@ cp .env.example .env
 nano .env
 ```
 
-### Step 6
+### Step 4
 #### Start Up the Project
 
 Use the following commands to manage the project with Docker Compose.
 
-#### Create
+#### Create and start
 ```shell
-docker compose up -d
+docker compose up -d # -d mean detached
+```
+#### Start
+```shell
+docker compose start -d # -d mean detached
 ```
 #### Stop
 ```shell
@@ -66,7 +70,7 @@ docker compose down
 ```
 #### Rebuild and start
 ```shell
-docker compose up -d --build
+docker compose up -d --build # --build mean force build
 ```
 
 
