@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a0454eda6e6f0a7f",
+        "id": "fd56762612eff2ca",
         "type": "tabs",
         "children": [
           {
-            "id": "52289ac93e735880",
+            "id": "87d055e379f6940c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa5d1e07e8533107",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Confusion matrix.md",
+                "file": "DB backup docker service example.md",
                 "mode": "preview",
                 "source": false
               }
@@ -61,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pret",
+                "query": "db ba",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -99,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Confusion matrix.md",
+                "file": "DB backup docker service example.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Confusion matrix.md",
+                "file": "DB backup docker service example.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Confusion matrix.md"
+                "file": "DB backup docker service example.md"
               }
             }
           }
@@ -147,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 452.5
+    "width": 355.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,37 +147,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aa5d1e07e8533107",
+  "active": "87d055e379f6940c",
   "lastOpenFiles": [
-    "Multi-class classification.md",
-    "CNN binary image classification.md",
-    "CNN multi-class.md",
-    "Find best learning rate tensor flow.md",
-    "Binary classification tensor flow.md",
-    "PostgreSQL.md",
-    "Alembic.md",
+    "File name based on current date bash.md",
+    "VMware install guide.md",
+    "vmware.md",
     "Docker compose example.md",
-    "ML.md",
-    "Tensor Flow.md",
-    "python.md",
-    "Confusion matrix.md",
-    "files/Pasted image 20240613230430.png",
-    "Regression model example Tensor Flow.md",
-    "files/Pasted image 20240612194730.png",
-    "files/Pasted image 20240612194058.png",
     "MariaDB.md",
+    "Define best learning rate tensor flow.md",
+    "Binary classification tensor flow.md",
+    "frontend.md",
+    "vue.md",
+    "Crypter decripter python.md",
+    "Bash aliases for python.md",
+    "dev.md",
+    "python.md",
+    "Background schedule example python.md",
+    "Tensor Flow.md",
+    "Powershell install vcenter.md",
+    "Regression model example Tensor Flow.md",
+    "nginx.md",
     "MySQL.md",
     "DB backup docker service example.md",
-    "schedule.md",
-    "Background schedule example python.md",
-    "EF.md",
-    "Relations EF asp.net.md",
-    "orm.md",
+    "Example of vite proxy.md",
+    "cryptography.md",
+    "PostgreSQL.md",
     "Sqlalchemy example.md",
-    "Docker file for python.md",
-    "nginx.md",
-    "Docker compose templates.md",
+    "sqlalchemy.md",
     "Pyinstaller.md",
+    "files/Pasted image 20240612194730.png",
+    "files/Pasted image 20240612194058.png",
     "files/Pasted image 20240602221316.png",
     "files/Pasted image 20240602221013.png",
     "files/Pasted image 20240602220924.png",
@@ -197,6 +184,7 @@
     "files/Pasted image 20240602223431.png",
     "files/Pasted image 20240602223314.png",
     "files/Pasted image 20240602222537.png",
+    "files/Pasted image 20240602222233.png",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
