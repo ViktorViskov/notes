@@ -1,6 +1,0 @@
-### Installing
-```powershell
-ipconfig
-```
-
-[[vmware]]
