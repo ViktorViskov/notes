@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VMware install guide.md",
+                "file": "DB backup docker service example.md",
                 "mode": "preview",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vmw",
+                "query": "db ba",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VMware install guide.md",
+                "file": "DB backup docker service example.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VMware install guide.md",
+                "file": "DB backup docker service example.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VMware install guide.md"
+                "file": "DB backup docker service example.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "87d055e379f6940c",
   "lastOpenFiles": [
-    "vmware.md",
+    "File name based on current date bash.md",
     "VMware install guide.md",
+    "vmware.md",
     "Docker compose example.md",
     "MariaDB.md",
     "Define best learning rate tensor flow.md",
@@ -175,7 +176,6 @@
     "Pyinstaller.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
-    "schedule.md",
     "files/Pasted image 20240602221316.png",
     "files/Pasted image 20240602221013.png",
     "files/Pasted image 20240602220924.png",
