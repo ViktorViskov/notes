@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fd56762612eff2ca",
+        "id": "f2996189f696f4ba",
         "type": "tabs",
         "children": [
           {
-            "id": "87d055e379f6940c",
+            "id": "561661fc5b7058de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DB backup docker service example.md",
-                "mode": "preview",
+                "file": "CNN multi-class.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "db ba",
+                "query": "mult",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB backup docker service example.md",
+                "file": "CNN multi-class.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB backup docker service example.md",
+                "file": "CNN multi-class.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DB backup docker service example.md"
+                "file": "CNN multi-class.md"
               }
             }
           }
@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87d055e379f6940c",
+  "active": "561661fc5b7058de",
   "lastOpenFiles": [
+    "DB backup docker service example.md",
     "File name based on current date bash.md",
     "VMware install guide.md",
     "vmware.md",
@@ -167,7 +168,6 @@
     "Regression model example Tensor Flow.md",
     "nginx.md",
     "MySQL.md",
-    "DB backup docker service example.md",
     "Example of vite proxy.md",
     "cryptography.md",
     "PostgreSQL.md",

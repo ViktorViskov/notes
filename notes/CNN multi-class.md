@@ -21,22 +21,6 @@ test_data_dir = data_dir + "/test"
 
 class_names = np.array(sorted(os.listdir(train_data_dir)))
 ```
-
-#### Show dataset
-```python
-for path, dir_name, file_name in os.walk(data_dir):
-    print(f"{len(dir_name)} directories, {len(file_name)} images in", path, sep="\t")
-
-def show_random_image(target_dir: str, target_class: str):
-    images = os.listdir(f"{target_dir}/{target_class}")
-    random_image = np.random.choice(images)
-    img = plt.imread(f"{target_dir}/{target_class}/{random_image}")
-    plt.title(f"{target_class} {img.shape}")
-    plt.axis("off")
-    plt.imshow(img)
-
-show_random_image(train_data_dir, np.random.choice(class_names))
-```
 #### Read dataset
 ```python
 tf.random.set_seed(42)
@@ -57,6 +41,27 @@ test_data = keras.utils.image_dataset_from_directory(
     label_mode="int",
     seed=42
 )
+
+class_names = train_data.class_names
+```
+#### Show dataset
+```python
+def show_random_image(target_dir: str, classes: list[str]):
+    plt.figure(figsize=(14, 10))
+    for num in range(4):
+        selected_class = np.random.choice(classes)
+        plt.subplot(2, 2, num+1)
+        images = os.listdir(f"{target_dir}/{selected_class}")
+        random_image = np.random.choice(images)
+        img = plt.imread(f"{target_dir}/{selected_class}/{random_image}")
+        plt.title(f"{selected_class} {img.shape}")
+        plt.axis("off")
+        plt.imshow(img)
+
+for path, dir_name, file_name in os.walk(data_dir):
+    print(f"{len(dir_name)} directories, {len(file_name)} images in", path, sep="\t")
+
+show_random_image(train_data_dir, class_names)
 ```
 #### Normalizing
 ```python
