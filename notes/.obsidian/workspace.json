@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CNN multi-class.md",
-                "mode": "source",
+                "file": "Find best learning rate tensor flow.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mult",
+                "query": "best",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CNN multi-class.md",
+                "file": "Find best learning rate tensor flow.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CNN multi-class.md",
+                "file": "Find best learning rate tensor flow.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CNN multi-class.md"
+                "file": "Find best learning rate tensor flow.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "561661fc5b7058de",
   "lastOpenFiles": [
+    "CNN multi-class.md",
     "DB backup docker service example.md",
     "File name based on current date bash.md",
     "VMware install guide.md",
@@ -173,7 +174,6 @@
     "PostgreSQL.md",
     "Sqlalchemy example.md",
     "sqlalchemy.md",
-    "Pyinstaller.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
     "files/Pasted image 20240602221316.png",
