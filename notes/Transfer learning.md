@@ -97,6 +97,25 @@ model_1.compile(
 
 model_1.summary()
 ```
+#### Load model from keras
+```python
+core_model = keras.applications.ResNet50V2(include_top=False, input_shape=(IMAGE_SIZE, IMAGE_SIZE, 3), classes=len(class_names))
+core_model.trainable = False
+
+model_2 = keras.Sequential([
+    core_model,
+    keras.layers.GlobalAveragePooling2D(), # if ValueError: Argument `output` must have rank (ndim)
+    keras.layers.Dense(10, activation='softmax')
+])
+
+model_2.compile(
+    loss=keras.losses.SparseCategoricalCrossentropy(),
+    optimizer=keras.optimizers.Adam(),
+    metrics=['accuracy']
+)
+
+model_2.summary()
+```
 #### Show loss curves function
 ```python
 def plot_loss_curves(history):
