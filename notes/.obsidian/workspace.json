@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "f2996189f696f4ba",
+        "id": "492d967a6e9b100c",
         "type": "tabs",
         "children": [
           {
-            "id": "561661fc5b7058de",
+            "id": "a4e83a6953b8e125",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CNN binary image classification.md",
-                "mode": "preview",
+                "file": "Find best learning rate tensor flow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75cb0cea43ad2d48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Transfer learning.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cnn",
+                "query": "lear",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CNN binary image classification.md",
+                "file": "Transfer learning.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CNN binary image classification.md",
+                "file": "Transfer learning.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CNN binary image classification.md"
+                "file": "Transfer learning.md"
               }
             }
           }
@@ -146,9 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "561661fc5b7058de",
+  "active": "75cb0cea43ad2d48",
   "lastOpenFiles": [
+    "Tensorflow utils.md",
     "Find best learning rate tensor flow.md",
+    "Transfer learning.md",
+    "CNN binary image classification.md",
     "CNN multi-class.md",
     "DB backup docker service example.md",
     "File name based on current date bash.md",
@@ -171,9 +187,6 @@
     "nginx.md",
     "MySQL.md",
     "Example of vite proxy.md",
-    "cryptography.md",
-    "PostgreSQL.md",
-    "Sqlalchemy example.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
     "files/Pasted image 20240602221316.png",
