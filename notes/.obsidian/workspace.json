@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
+                "file": "CNN binary image classification.md",
                 "mode": "preview",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "best",
+                "query": "cnn",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
+                "file": "CNN binary image classification.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
+                "file": "CNN binary image classification.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Find best learning rate tensor flow.md"
+                "file": "CNN binary image classification.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "561661fc5b7058de",
   "lastOpenFiles": [
+    "Find best learning rate tensor flow.md",
     "CNN multi-class.md",
     "DB backup docker service example.md",
     "File name based on current date bash.md",
@@ -173,7 +174,6 @@
     "cryptography.md",
     "PostgreSQL.md",
     "Sqlalchemy example.md",
-    "sqlalchemy.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
     "files/Pasted image 20240602221316.png",
