@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
+                "file": "nginx.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vm",
+                "query": "ngin",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "nginx.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "nginx.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "nginx.md"
               }
             }
           }
