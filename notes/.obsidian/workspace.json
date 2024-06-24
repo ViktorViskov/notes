@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "465f6502dec382aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VMware install guide.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VMware install guide.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VMware install guide.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -146,11 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cad881fdab2bdc1a",
+  "active": "465f6502dec382aa",
   "lastOpenFiles": [
+    "VMware install guide.md",
+    "conflict-files-obsidian-git.md",
+    "files/Pasted image 20240613230430.png",
+    "Multi-class classification.md",
+    "ML.md",
+    "Find best learning rate tensor flow.md",
+    "Confusion matrix.md",
+    "CNN multi-class.md",
+    "CNN binary image classification.md",
     "MySQL.md",
     "MariaDB.md",
-    "VMware install guide.md",
     "vmware.md",
     "Powershell install vcenter.md",
     "DB backup docker service example.md",
@@ -167,13 +188,6 @@
     "Background schedule example python.md",
     "Tensor Flow.md",
     "Regression model example Tensor Flow.md",
-    "nginx.md",
-    "Example of vite proxy.md",
-    "cryptography.md",
-    "PostgreSQL.md",
-    "Sqlalchemy example.md",
-    "sqlalchemy.md",
-    "Pyinstaller.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
     "files/Pasted image 20240602221316.png",
@@ -183,7 +197,6 @@
     "files/Pasted image 20240602223431.png",
     "files/Pasted image 20240602223314.png",
     "files/Pasted image 20240602222537.png",
-    "files/Pasted image 20240602222233.png",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
