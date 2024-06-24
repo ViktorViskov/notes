@@ -35,7 +35,7 @@ You can successful back to project directory
 cd ..
 ```
 
-### Step 3
+### Step 2
 #### Prepare `.env` file
 Before editing the configuration file, you need to create it. The Git repository contains an example of a `.env` file named `.env.example`. Need to make copy of this file and edit
 ```shell
@@ -43,7 +43,7 @@ cp .env.example .env
 nano .env
 ```
 
-### Step 4
+### Step 3
 #### Start Up the Project
 
 Use the following commands to manage the project with Docker Compose.
@@ -54,7 +54,7 @@ docker compose up -d # -d mean detached
 ```
 #### Start
 ```shell
-docker compose start -d # -d mean detached
+docker compose start -d
 ```
 #### Stop
 ```shell

@@ -1,6 +1,11 @@
 ```nginx
 server {
     listen          80;
+    
+    listen 443 ssl;
+    ssl_certificate /ssl/fullchain.pem;
+    ssl_certificate_key /ssl/privkey.pem;
+    
     server_name     site;
     index           index.html;
     client_max_body_size 1G;

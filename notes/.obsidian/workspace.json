@@ -4,35 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "492d967a6e9b100c",
+        "id": "2bed065690f0d59b",
         "type": "tabs",
         "children": [
           {
-            "id": "a4e83a6953b8e125",
+            "id": "465f6502dec382aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Find best learning rate tensor flow.md",
+                "file": "nginx.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e6b155f57588d0ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "IPV6 disable debian.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "75cb0cea43ad2d48",
+            "id": "f5d117bdc04f655c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Transfer learning.md",
+                "file": "SSH password less.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87a1942ad95c2b2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UFW.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -61,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lear",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,8 +102,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Transfer learning.md",
+                "file": "UFW.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Transfer learning.md",
+                "file": "UFW.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Transfer learning.md"
+                "file": "UFW.md"
               }
             }
           }
@@ -159,19 +182,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "75cb0cea43ad2d48",
+  "active": "87a1942ad95c2b2d",
   "lastOpenFiles": [
-    "Tensorflow utils.md",
-    "Find best learning rate tensor flow.md",
-    "Transfer learning.md",
-    "CNN binary image classification.md",
-    "CNN multi-class.md",
+    "SSH password less.md",
+    "UFW.md",
+    "IPV6 disable debian.md",
+    "Untitled",
+    "nginx.md",
     "DB backup docker service example.md",
-    "File name based on current date bash.md",
     "VMware install guide.md",
-    "vmware.md",
-    "Docker compose example.md",
+    "conflict-files-obsidian-git.md",
+    "files/Pasted image 20240613230430.png",
+    "Multi-class classification.md",
+    "ML.md",
+    "Find best learning rate tensor flow.md",
+    "Confusion matrix.md",
+    "CNN multi-class.md",
+    "CNN binary image classification.md",
+    "MySQL.md",
     "MariaDB.md",
+    "vmware.md",
+    "Powershell install vcenter.md",
+    "File name based on current date bash.md",
+    "Docker compose example.md",
     "Define best learning rate tensor flow.md",
     "Binary classification tensor flow.md",
     "frontend.md",
@@ -179,14 +212,6 @@
     "Crypter decripter python.md",
     "Bash aliases for python.md",
     "dev.md",
-    "python.md",
-    "Background schedule example python.md",
-    "Tensor Flow.md",
-    "Powershell install vcenter.md",
-    "Regression model example Tensor Flow.md",
-    "nginx.md",
-    "MySQL.md",
-    "Example of vite proxy.md",
     "files/Pasted image 20240612194730.png",
     "files/Pasted image 20240612194058.png",
     "files/Pasted image 20240602221316.png",
@@ -196,7 +221,6 @@
     "files/Pasted image 20240602223431.png",
     "files/Pasted image 20240602223314.png",
     "files/Pasted image 20240602222537.png",
-    "files/Pasted image 20240602222233.png",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
