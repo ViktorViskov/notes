@@ -1,6 +1,6 @@
 ```nginx
 server {
-    listen          80;
+    listen 80;
     
     listen 443 ssl;
     ssl_certificate /ssl/fullchain.pem;
@@ -48,6 +48,18 @@ services:
       - ./config:/etc/nginx/templates
       - ./static:/static
       - ./media:/media
+```
+
+#### Redirect to port 443
+```nginx
+server {
+    listen 80;
+    server_name site;
+
+    location / {
+        return 301 https://$server_name$request_uri;
+    }
+}
 ```
 [[proxy]]
 [[docker]]
