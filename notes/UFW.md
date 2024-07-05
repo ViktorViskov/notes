@@ -22,3 +22,5 @@ Accept and enable rools
 ```shell
 sudo ufw enable
 ```
+
+[[linux]]

@@ -43,3 +43,5 @@ exe = EXE(
     icon=['icon.ico'],
 )
 ```
+
+[[python]]

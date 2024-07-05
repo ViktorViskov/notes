@@ -20,3 +20,7 @@ Replace `root` with your MySQL username, `new_database_name` with the name of th
 ```shell
 docker compose up -d --build
 ```
+
+
+[[work]]
+[[vmware]]

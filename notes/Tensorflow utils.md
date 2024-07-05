@@ -24,6 +24,6 @@ def plot_loss_curves(history):
     plt.ylabel("accuracy")
     plt.grid(True)
     plt.legend()
-
-
 ```
+
+[[Tensor Flow]]

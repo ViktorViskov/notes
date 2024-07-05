@@ -5,6 +5,9 @@ alembic init migration
 
 #### Autogenerate migration file
 ```bash
+alembic revision --autogenerate
+```
+```bash
 alembic revision --autogenerate -m "name"
 ```
 
