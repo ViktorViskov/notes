@@ -148,6 +148,29 @@ pymysql #mysql/mariadb
 
 ```
 
+#### Connection strings
+
+**MariaDB**
+```
+mssql+pymssql://username:password@localhost/dbname
+```
+
+**Postgres**
+```
+postgresql://username:pass@localhost:5432/db_name
+```
+
+**Sqlite**
+```
+sqlite:///path/to/database.db
+```
+
+**MSSQL**
+```
+mssql+pymssql://username:password@localhost/dbname
+```
+
+
 [[orm]]
 [[python]]
 [[sqlalchemy]]
