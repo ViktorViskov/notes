@@ -1,7 +1,9 @@
 ### Prerequisites:
 
-1. **MySQL Credentions**
+1. **MySQL** database
+2. **MySQL Credentions**
 3. The **SQL dump file** (e.g., `backup.sql`) you want to restore from.
+
 
 ### Step-by-Step Guide:
 1. **Create a new database** (if you want to restore the dump into a new database):

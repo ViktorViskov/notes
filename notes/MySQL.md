@@ -9,7 +9,10 @@ services:
       - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-      MYSQL_DATABASE: db-name
+      MYSQL_DATABASE: db_name
+    volumes:
+      - ./storage:/var/lib/mysql
+
 ```
 
 
