@@ -34,7 +34,18 @@ You can successful back to project directory
 ```shell
 cd ..
 ```
-
+#### Restore DB from Backup (Optional) on Debian or Ubuntu
+1. **Prepare Packages:**
+Install the `default-mysql-client` package or another relevant package to use the `mysql` command. You can search for packages with keywords like `mysql client`.
+```bash
+sudo apt update
+sudo apt install default-mysql-client
+```
+2. **Restore the database** from the SQL dump file:
+```shell
+mysql -u root -p new_database_name < /path/to/backup.sql
+```
+Replace `root` with your MySQL username, `new_database_name` with the name of the database you created (or an existing one), and `/path/to/backup.sql` with the path to your SQL dump file. You will be prompted to enter your password after starting the command.
 ### Step 2
 #### Prepare `.env` file
 Before editing the configuration file, you need to create it. The Git repository contains an example of a `.env` file named `.env.example`. Need to make copy of this file and edit

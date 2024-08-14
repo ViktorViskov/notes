@@ -6,7 +6,10 @@
 
 
 ### Step-by-Step Guide:
-1. **Create a new database** (if you want to restore the dump into a new database):
+0. **Install DB**
+Need to follow **first step** in **VMware install guide** to prepare all project and create **DB**
+
+2. **Create a new database** (if you want to restore the dump into a new database):
 ```shell
 mysql -u root -p -e "CREATE DATABASE new_database_name;"
 ```
