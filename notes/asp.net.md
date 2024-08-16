@@ -41,6 +41,22 @@ public class TokenDto
 }
 ```
 ## DB
+#### Packages
+```shell
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Pomelo.EntityFrameworkCore.MySql
+```
+
+#### Connection string example
+##### config example
+```
+"DB_CONNECTION_STRING": "server=192.168.0.2;database=test-db;port=3306;user=root;password=SecretPassword;"
+```
+##### docker example
+```
+DB_CONNECTION_STRING=server=${DB_ADDRESS};database=${DB_NAME};port=${DB_PORT};user=${DB_USER};password=${DB_PASSWORD};
+```
 #### MariaDB connect  `Program.cs`
 ```cs
 using Microsoft.EntityFrameworkCore;
@@ -206,7 +222,7 @@ public class Group
 }
 ```
 
-### Complex relations
+### Complex relations 1
 ```cs
 using Microsoft.EntityFrameworkCore;
 
@@ -311,6 +327,7 @@ public class Group {
 
     [ForeignKey("RevisorId")]
     public User? Revisor { get; set; }
+    
     public List<User> Members {get; set;} = new();
 
     [Column("setting_id")]
@@ -336,6 +353,91 @@ public class Setting {
 
     [Column("name")]
     public string Name {get; set;} = "";
+}
+```
+### Complex relation 2
+#### `Context.cs`
+```cs
+using Microsoft.EntityFrameworkCore;
+
+
+public class Context(DbContextOptions<Context> options) : DbContext(options)
+{
+    public DbSet<User> Users => Set<User>();
+    public DbSet<ToDoTask> ToDoTasks => Set<ToDoTask>();
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        // Task
+        modelBuilder.Entity<ToDoTask>()
+            .HasOne(t => t.User)
+            .WithMany(u => u.Tasks)
+            .HasForeignKey("UserId");
+    }
+
+    static public void CreateDb(WebApplication app)
+    {
+        using IServiceScope scopeDb = app.Services.CreateScope();
+        Context dbContext = scopeDb.ServiceProvider.GetRequiredService<Context>();
+        dbContext.Database.EnsureCreated();
+    }
+}
+```
+#### `User.cs`
+```cs
+using System.ComponentModel.DataAnnotations.Schema;
+
+
+[Table("users")]
+public class User
+{
+    [Column("id")]
+    public int Id { get; set; }
+
+    [Column("email")]
+    public string Email { get; set; } = "";
+
+    [Column("pass")]
+    public string Password { get; set; } = "";
+
+    public List<ToDoTask> Tasks { get; set; } = new ();
+
+    [Column("created_at")]
+    public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
+
+    [Column("updated_at")]
+    public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
+    
+}
+```
+#### `ToDoTask.cs`
+```cs
+using System.ComponentModel.DataAnnotations.Schema;
+
+
+[Table("to_do_tasks")]
+public class ToDoTask
+{
+    [Column("id")]
+    public int Id { get; set; }
+
+    [Column("user_id")]
+    public int UserId { get; set; }
+
+    [ForeignKey("UserId")]
+    public User? User { get; set; }
+
+    [Column("title")]
+    public string Title { get; set; } = "";
+
+    [Column("description")]
+    public string Description { get; set; } = "";
+
+    [Column("created_at")]
+    public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
+
+    [Column("updated_at")]
+    public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
+
 }
 ```
 ## Docker deploy
@@ -386,5 +488,67 @@ services:
 #### `.env`
 ```
 DB_CONNECTION_STRING=server=10.1.1.1;database=db;port=6001;user=root;password=pass;
+```
+## Exceptions
+#### `ExceptionMiddleware.cs`
+```cs
+using System.Net;
+using System.Text.Json;
+
+
+public class ExceptionMiddleware(RequestDelegate next)
+{
+    private readonly RequestDelegate _next = next;
+
+    public async Task InvokeAsync(HttpContext context)
+    {
+        try
+        {
+            await _next(context);
+        }
+        catch (HttpException ex) 
+        {
+            await HandleExceptionAsync(context, ex.Message, (int) ex.StatusCode);
+        }
+        catch (Exception ex)
+        {
+            await HandleExceptionAsync(context, ex.Message, (int) HttpStatusCode.InternalServerError);
+        }
+    }
+
+    private Task HandleExceptionAsync(HttpContext context, string message, int statusCode)
+    {
+        context.Response.ContentType = "application/json";
+        context.Response.StatusCode = statusCode;
+
+        var result = JsonSerializer.Serialize(new { message });
+        return context.Response.WriteAsync(result);
+    }
+}
+```
+#### `HttpException.cs`
+```cs
+using System.Net;
+
+
+public class HttpException : Exception
+{
+    public HttpStatusCode StatusCode { get; }
+
+    public HttpException(HttpStatusCode statusCode, string message) : base(message)
+    {
+        StatusCode = statusCode;
+    }
+}
+```
+#### `Program.cs`
+```cs
+app.UseMiddleware<ExceptionMiddleware>();
+```
+#### Usage
+```cs
+using System.Net;
+
+throw new HttpException(HttpStatusCode.NotFound,"Exception error");
 ```
 [[EF]]
