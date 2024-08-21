@@ -1,4 +1,8 @@
 ## Linux / cli usage
+#### Install linux cli
+```shell
+dotnet tool install --global dotnet-ef
+```
 #### Create migration
 ```bash
 dotnet ef migrations add InitialCreate
