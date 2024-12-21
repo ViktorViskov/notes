@@ -31,3 +31,6 @@ services:
       - "./data:/var/lib/postgresql/data/"
 
 ```
+
+#### Tune config file
+https://pgtune.leopard.in.ua/

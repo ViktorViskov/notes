@@ -32,6 +32,20 @@ server {
 
 ```
 
+```nginx
+server {
+    listen 80;
+    listen [::]:80;
+    server_name sub.domail.com;
+    server_tokens off;
+    charset utf-8;
+    location / {
+        proxy_set_header Host $http_host;
+        proxy_pass http://ip:port;
+    }
+}
+```
+
 #### File name
 ```bash
 ./config/default.conf.template

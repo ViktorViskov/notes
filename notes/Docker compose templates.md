@@ -15,4 +15,4 @@ services:
 [[docker]]
 [[templates]]
 [[PostgreSQL]]
-apac[[MariaDB]]
+[[MariaDB]]
