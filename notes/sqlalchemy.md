@@ -159,6 +159,21 @@ class User(Base):
             created_at=self.created_at
         )
 ```
+
+#### Another example with typing
+```python
+class CarDb(base):
+    __tablename__ = 'cars'
+    id = mapped_column("id", Integer, primary_key=True, index=True)
+    domain = mapped_column("domain", String(128))
+    listing_id = mapped_column("listing_id", String(128))
+    stage_thr_parsed = mapped_column("stage_thr_parsed", Boolean, default=False)
+    archive_at = mapped_column("archive_at", DateTime())
+    site_updated_at = mapped_column("site_updated_at", DateTime())
+    created_at = mapped_column("created_at", DateTime(), default=func.now())
+    detected_at = mapped_column("detected_at", DateTime(), default=func.now(), onupdate=func.now())
+```
+
 #### `models/dto.py`
 ```python
 from __future__ import annotations
