@@ -4,7 +4,7 @@ Need to install linux headers and other utils
 sudo apt install build-essential linux-headers-$(uname -r)
 ```
 
-### Example of simple module
+### Example of simple char device
 ```c
 #include <linux/module.h>
 #include <linux/kernel.h>

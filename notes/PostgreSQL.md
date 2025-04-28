@@ -34,3 +34,27 @@ services:
 
 #### Tune config file
 https://pgtune.leopard.in.ua/
+https://www.pgconfig.org/
+
+Config example
+```conf
+listen_addresses = '*' # allow all hosts
+max_connections = 500
+shared_buffers = 12GB
+effective_cache_size = 36GB
+maintenance_work_mem = 2GB
+checkpoint_completion_target = 0.9
+wal_buffers = 16MB
+default_statistics_target = 100
+random_page_cost = 1.1
+effective_io_concurrency = 200
+work_mem = 6291kB
+huge_pages = try
+min_wal_size = 2GB
+max_wal_size = 8GB
+max_worker_processes = 12
+max_parallel_workers_per_gather = 4
+max_parallel_workers = 12
+max_parallel_maintenance_workers = 4
+log_min_duration_statement = '10s'  # log queries with executions more than 10s
+```
