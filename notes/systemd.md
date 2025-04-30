@@ -31,4 +31,3 @@ systemctl disable some.service
 ```
 
 [[linux]]
-[[systemd]]

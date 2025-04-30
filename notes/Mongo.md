@@ -31,158 +31,172 @@ pymongo
 ```
 ## Context
 ```python
+from datetime import timezone
+from bson.codec_options import CodecOptions
+from typing import Any
+from typing import Callable
+from typing import TypeVar
+from typing import Type
+
 import pymongo
 
 
 _CONNECTION_STRING = "mongodb://mongouser:mongopassword@localhost:27017/some_db"
-if not _CONNECTION_STRING:
-    raise Exception("DB connection string not providet")
 
 _DB_NAME = _CONNECTION_STRING.split("/").pop()
 _PREPARED_CONNECTION_STRING = _CONNECTION_STRING.replace(f"/{_DB_NAME}", "")
 
 _CLIENT = pymongo.MongoClient(_PREPARED_CONNECTION_STRING)
 
-DB = _CLIENT[_DB_NAME]
-```
-## DB models example
-
-## base.py
-```python
-from dataclasses import dataclass, fields, asdict
-from bson.objectid import ObjectId
-from datetime import datetime
-from json import dumps
+DB = _CLIENT.get_database(
+    _DB_NAME, codec_options=CodecOptions(tz_aware=True, tzinfo=timezone.utc)
+)
 
 
-class BaseMeta(type):
-    _cache_fields = {}
+class Field:
+    def __init__(self, name: str, default: Any = None, default_factory: Callable[[], Any] | None = None):
+        self.name = name
+        self.private_name = f"_{name}"
+        self.default = default
+        self.default_factory = default_factory
 
-    def __getattr__(cls, name: str) -> str:
-        class_name = cls.__name__
+    def __get__(self, instance, owner):
+        if instance is None:
+            # Accessed via class
+            return self.name
 
-        if class_name not in cls._cache_fields:
-            class_fields = {f.name for f in fields(cls)}  # type: ignore
-            if class_fields:
-                cls._cache_fields[class_name] = class_fields
+        if not hasattr(instance, self.private_name):
+            # Set default if not already set
+            if self.default_factory is not None:
+                value = self.default_factory()
+            else:
+                value = self.default
+            setattr(instance, self.private_name, value)
 
-        field_names = cls._cache_fields.get(class_name, set())
-        if name in field_names:
-            return name
-        raise AttributeError(f"Field '{name}' not found in {cls.__name__}")
+        return getattr(instance, self.private_name)
 
+    def __set__(self, instance, value):
+        setattr(instance, self.private_name, value)
 
-@dataclass
-class Base(metaclass=BaseMeta):
-    def to_dict(self):
-        data = asdict(self)
-        id = data.pop("id", ObjectId())
-        data["_id"] = id
-        return data
-
-    def to_json(self) -> str:
-        data = self.to_dict()
-        data["_id"] = str(data["_id"])
-
-        # Convert datetime fields to ISO format
-        for key, value in data.items():
-            if isinstance(value, datetime):
-                data[key] = value.isoformat()
-
-        return dumps(data)
+class Base:
+    @classmethod
+    def from_dict(cls, data):
+        instance = cls()
+        for attr, field in cls.__dict__.items():
+            if isinstance(field, Field):
+                value = data.get(field.name)
+                if value is not None:
+                    setattr(instance, attr, value)
+        return instance
 
     @classmethod
-    def from_dict(cls, data: dict):
-        data = data.copy()
-        data["id"] = data.pop("_id", ObjectId())
-        return cls(**data)
+    def from_list_dicts(cls, data_list):
+        return [cls.from_dict(data) for data in data_list]
+
+    def to_dict(self):
+        result = {}
+        for attr, field in self.__class__.__dict__.items():
+            if isinstance(field, Field):
+                result[field.name] = getattr(self, attr)
+        return result
+
+T = TypeVar("T")
+def mapped_field(name: str, data_type:Type[T], default: Any = None, default_factory: Callable[[], Any] | None = None) -> T:
+    """
+    Maps a field to a specific type and provides default values.
+    """
+    return Field(name, default, default_factory) # type: ignore
 ```
+## DB models example
 
 ## models.py
 ```python
 from bson.objectid import ObjectId
-from dataclasses import dataclass
-from dataclasses import field
 from datetime import datetime
 from datetime import timezone
 
-from base import Base
+from core.context import Base
+from core.context import Field
+from core.context import mapped_field
 
 
-@dataclass
-class ProxyDb(Base):
-    ip: str
-    port: int
-    username: str
-    password: str
-    group: str
-    is_active: bool
-    created_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
-    updated_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
-    id: ObjectId = field(default_factory=lambda: ObjectId())
+class UserDb(Base):
+    id = mapped_field("_id", ObjectId, default_factory=ObjectId)
+    username = mapped_field("username", str)
+    password = mapped_field("password", str)
+    group = mapped_field("group", str)
+    is_active = mapped_field("is_active", bool, default=True)
+    created_at = mapped_field("created_at", datetime, default_factory=lambda: datetime.now(timezone.utc))
+    updated_at = mapped_field("updated_at", datetime, default_factory=lambda: datetime.now(timezone.utc))
+
+class NoteDb(Base):
+    id = mapped_field("_id", ObjectId, default_factory=ObjectId)
+    user_id = Field("user_id")
+    title = Field("title")
+    content = Field("content")
+    created_at = mapped_field("created_at", datetime, default_factory=lambda: datetime.now(timezone.utc))
+    updated_at = mapped_field("updated_at", datetime, default_factory=lambda: datetime.now(timezone.utc))
 ```
 ## Repo example
 ```python
 from datetime import datetime
 from datetime import timezone
 
-from db import ProxyDb
-from context import DB
+from models.db import UserDb
+from core.db_context import DB
 from bson.objectid import ObjectId
 
 
-COLLECTION = DB["proxyes"]
+COLLECTION = DB.get_collection("users")
 
 
-def add(proxy: ProxyDb) -> ProxyDb:
-    COLLECTION.insert_one(proxy.to_dict())
-    return proxy
+def add(user: UserDb) -> UserDb:
+    print(user.to_dict())
+    id = COLLECTION.insert_one(user.to_dict()).inserted_id
+    user.id = id
+    return user
 
 
-def get_by_id(id: ObjectId) -> ProxyDb | None:
-    record = COLLECTION.find_one({ProxyDb.id: id})
-    if record is None:
-        return None
-
-    return ProxyDb.from_dict(record)
+def get_by_id(id: ObjectId) -> UserDb | None:
+    record = COLLECTION.find_one({UserDb.id: id})
+    return UserDb.from_dict(record)
 
 
-def get_all() -> list[ProxyDb]:
-    return [ProxyDb.from_dict(proxy) for proxy in COLLECTION.find()]
+def get_by_username(username: str) -> UserDb | None:
+    record = COLLECTION.find_one({UserDb.username: username})
+    return UserDb.from_dict(record)
 
 
-def get_active() -> list[ProxyDb]:
-    return [
-        ProxyDb.from_dict(proxy) for proxy in COLLECTION.find({ProxyDb.is_active: True})
-    ]
+def get_all() -> list[UserDb]:
+    items = COLLECTION.find()
+    return UserDb.from_list_dicts(items)
 
 
-def get_random() -> ProxyDb | None:
+def get_active() -> list[UserDb]:
+    items = COLLECTION.find({UserDb.is_active: True})
+    return UserDb.from_list_dicts(items)
+
+
+def get_random() -> UserDb | None:
     record = COLLECTION.aggregate([{"$sample": {"size": 1}}]).try_next()
-    if record is None:
-        return None
-
-    return ProxyDb.from_dict(record)
+    return UserDb.from_dict(record)
 
 
-def get_random_by_group(group: str) -> ProxyDb | None:
+def get_random_by_group(group: str) -> UserDb | None:
     record = COLLECTION.aggregate(
-        [{"$match": {ProxyDb.group: group}}, {"$sample": {"size": 1}}]
+        [{"$match": {UserDb.group: group}}, {"$sample": {"size": 1}}]
     ).try_next()
-    if record is None:
-        return None
-
-    return ProxyDb.from_dict(record)
+    return UserDb.from_dict(record)
 
 
 def delete(id: ObjectId) -> None:
-    COLLECTION.delete_one({str(ProxyDb.id): id})
+    COLLECTION.delete_one({str(UserDb.id): id})
 
 
-def update(proxy: ProxyDb) -> None:
+def update(proxy: UserDb) -> None:
     COLLECTION.update_one(
-        {str(ProxyDb.id): proxy.id},
-        {"$set": {**proxy.to_dict(), ProxyDb.updated_at: datetime.now(timezone.utc)}},
+        {str(UserDb.id): proxy.id},
+        {"$set": {**proxy.to_dict(), UserDb.updated_at: datetime.now(timezone.utc)}},
     )
 
 ```
