@@ -25,6 +25,7 @@ services:
     environment:
       POSTGRES_USER: cars_user
       POSTGRES_PASSWORD: password
+      POSTGRES_DB: db_name
     ports:
       - "5432:5432"
     volumes:

@@ -1,3 +1,4 @@
+## Config examples
 ```nginx
 server {
     listen 80;
@@ -46,12 +47,41 @@ server {
 }
 ```
 
-#### File name
+```nginx
+server {
+    listen 80;
+    client_max_body_size 1G;
+
+    location / {
+        proxy_pass       http://frontend:3000/;
+        proxy_redirect   off;
+    }
+
+    location ^~ /api {
+        proxy_pass       http://backend:3000/;
+        proxy_redirect   off;
+    }
+}
+```
+
+### Redirect to port 443
+```nginx
+server {
+    listen 80;
+    server_name site;
+
+    location / {
+        return 301 https://$server_name$request_uri;
+    }
+}
+```
+
+### File name
 ```bash
 ./config/default.conf.template
 ```
 
-#### Docker compose file
+## Docker compose file examples
 ```yaml
 services:
   nginx:
@@ -64,16 +94,16 @@ services:
       - ./media:/media
 ```
 
-#### Redirect to port 443
-```nginx
-server {
-    listen 80;
-    server_name site;
-
-    location / {
-        return 301 https://$server_name$request_uri;
-    }
-}
+```yaml
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
 ```
+
+
 [[proxy]]
 [[docker]]
