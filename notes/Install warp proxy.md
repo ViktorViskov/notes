@@ -31,6 +31,8 @@ Edith proxy config
 apk add nano
 nano wireproxy.conf
 ```
+
+Http proxy
 ```bash
 BindAddress = 127.0.0.1:20080
 ```
