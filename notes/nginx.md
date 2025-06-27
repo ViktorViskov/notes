@@ -75,6 +75,45 @@ server {
     }
 }
 ```
+### Fix redirect error
+When accessing https://gestureai.chat/api/admin, the backend returns a 302 redirect pointing to http://backend:3000/api/admin/ instead of the correct domain URL. This happens because the backend is unaware that it is running behind a reverse proxy and generates redirects based on its internal hostname (backend:3000) instead of the public domain.
+
+```nginx
+server {
+    listen 80;
+    client_max_body_size 1G;
+
+    location ^~ /api {
+        proxy_pass       http://backend:3000;
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $host;
+
+        proxy_redirect   off;
+    }
+}
+```
+
+`proxy_pass http://backend:3000;`
+Forwards requests to the backend service without stripping /api from the path.
+
+`proxy_set_header Host $host;`
+Passes the original domain (gestureai.chat) to the backend.
+
+`proxy_set_header X-Real-IP $remote_addr;`
+Forwards the client's real IP address.
+
+`proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;`
+Keeps the chain of client and proxy IPs.
+
+`proxy_set_header X-Forwarded-Proto $scheme;`
+Indicates whether the original request was HTTP or HTTPS.
+
+`proxy_set_header X-Forwarded-Host $host;`
+Passes the original host for proper URL generation in backend redirects.
 
 ### File name
 ```bash
